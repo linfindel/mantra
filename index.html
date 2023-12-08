@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantras</title>
+
+    <link rel="stylesheet" href="https://linfindel.github.io/nadircss/nadir.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="navbar-column">
+        <div class="navbar">
+            <h1>Mantras</h1>
+        </div>
+
+        <button>
+            <span class="material-symbols-rounded">hub</span>
+            Visit Chonk Hub
+        </button>
+    </div>
+
+    <h1 id="welcome">Welcome, Follower</h1>
+
+    <div id="intensities" class="card column">
+        <h2>Choose your study intensity</h2>
+
+        <div class="row">
+            <button onclick="setIntensity(1)">
+                <span class="material-symbols-rounded">highlighter_size_1</span>
+                10 repetitions
+            </button>
+
+            <button onclick="setIntensity(2)">
+                <span class="material-symbols-rounded">highlighter_size_2</span>
+                100 repetitions
+            </button>
+
+            <button onclick="setIntensity(3)">
+                <span class="material-symbols-rounded">highlighter_size_3</span>
+                1000 repetitions
+            </button>
+
+            <button onclick="setIntensity(4)">
+                <span class="material-symbols-rounded">highlighter_size_4</span>
+                10000 repetitions
+            </button>
+
+            <button onclick="setIntensity(5)">
+                <span class="material-symbols-rounded">highlighter_size_5</span>
+                100000 repetitions
+            </button>
+        </div>
+    </div>
+
+    <div id="mantras" class="card column" style="display: none;">
+        <h2>Choose your mantra</h2>
+
+        <div class="row">
+            <button onclick="setMantra(1)">
+                Ribbit of Resilience, Chonk's Grace
+            </button>
+
+            <button onclick="setMantra(2)">
+                Embrace the Leap, Follow Chonk's Path
+            </button>
+
+            <button onclick="setMantra(3)">
+                Chonk's Serenity, GIF of Harmony
+            </button>
+
+            <button onclick="setMantra(4)">
+                In Chonk's GIF, Find Inner Peace
+            </button>
+
+            <button onclick="setMantra(5)">
+                Croak of Wisdom, Chonk Guides Us
+            </button>
+        </div>
+    </div>
+
+    <div class="progress" style="background-color: rgba(0, 89, 255, 0.25); width: 10rem;">
+        <div id="progress" class="progress" style="background-color: rgb(0, 89, 255); width: 0;"></div>
+    </div>
+    <div id="text"></div>
+    <textarea id="input" style="opacity: 0;"></textarea>
+
+    <script src="script.js"></script>
+</body>
+</html>
