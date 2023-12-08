@@ -23,6 +23,8 @@ function setMantra(mantraIndex) {
     document.getElementById("welcome").remove();
     document.getElementById("input").focus();
 
+    document.getElementById("progress-container").style.opacity = "1";
+
     let index = 0;
     let currentRep = 1;
     let totalProgress = 0;
