@@ -49,6 +49,10 @@ function setMantra(mantraIndex) {
 
     updateText();
 
+    inputField.addEventListener("blur", () => {
+        inputField.focus();
+    })
+
     inputField.addEventListener('input', () => {
         const userInput = inputField.value;
         const expectedChar = selectedMantra.charAt(index);
