@@ -1,0 +1,47 @@
+nav, .card, .card-flat-top, .card-flat-bottom, button {
+  background-color: rgba(136, 171, 80, 0.25);
+}
+
+button:not(.button-warning):hover {
+  background-color: rgba(136, 171, 80, 0.5);
+}
+
+.circle {
+  animation: frog-intro 2.5s ease;
+
+  background-color: #A8CD68;
+
+  border-radius: 100vmax;
+
+  box-shadow: 0px 0px 0px .75rem #DCEEC6, 0px 0px 50px 5px #88AB50;
+
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+@keyframes frog-intro {
+  0% {
+      box-shadow: 0px 0px 0px .75rem #DCEEC6, 0px 0px 50px 5px #88AB50;
+
+      width: 7.5rem;
+      height: 7.5rem;
+  }
+
+  50% {
+      background-color: #A8CD68;
+
+      box-shadow: 0px 0px 0px .25rem #DCEEC6, 0px 0px 50px 2.5px #88AB50;
+      
+      width: 4rem;
+      height: 4rem;
+  }
+
+  100% {
+      background-color: black;
+
+      box-shadow: 0px 0px 0px 5rem #DCEEC6, 0px 0px 50px 500px #88AB50;
+
+      width: 150vw;
+      height: 150vw;
+  }
+}
